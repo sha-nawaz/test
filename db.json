@@ -1,0 +1,20 @@
+{
+  "productlist": [
+    {
+      "name": "tarzan5",
+      "email": "test@gmail.com",
+      "city": "Bombay",
+      "contactNo": 8087200045,
+      "designation": "Softwere Enginer",
+      "id": 1
+    },
+    {
+      "name": null,
+      "email": null,
+      "city": null,
+      "contactNo": null,
+      "designation": null,
+      "id": 6
+    }
+  ]
+}

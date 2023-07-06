@@ -1,0 +1,31 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">id</th>
+        <th scope="col">Name</th>
+        <th scope="col">Email</th>
+        <th scope="col">City</th>
+        <th scope="col">ContactNo</th>
+        <th scope="col">Designation</th>
+        <th scope="col">Delete</th>
+        <th scope="col">Edit</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of productList">
+      
+        <td>{{item.id}}</td>
+        <td>{{item.name}}</td>
+        <td>{{item.email}}</td>
+        <td>{{item.city}}</td>
+        <td>{{item.contactNo}}</td>
+        <td>{{item.designation}}</td>
+
+        <td> <i class="fa fa-trash" (click)="dleteFun(item.id)" style="font-size:20px;color:black;"></i></td>
+        
+        <td> <i class="fa fa-trash" routerLink="/update/{{item.id}}" style="font-size:20px;color:black;"></i></td>
+        
+      </tr>
+ 
+    </tbody>
+  </table>
